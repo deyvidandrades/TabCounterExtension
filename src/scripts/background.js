@@ -17,8 +17,10 @@ function getNumTabs() {
 
         chrome.storage.sync.get(["recorde"]).then((result) => {
             let recorde = result.recorde
-            if (tabs.length > recorde.anterior) {
-                salvarDados(tabs.length, recorde.atual)
+            if (recorde) {
+                if (tabs.length > recorde.anterior) {
+                    salvarDados(tabs.length, recorde.atual)
+                }
             }
         });
 

@@ -1,7 +1,7 @@
 chrome.windows.getCurrent(function (window) {
 
     chrome.storage.sync.get(["recorde"]).then((result) => {
-        carregarListaTabs(window.id, result.recorde)
+        carregarListaTabs(window.id, result.recorde ? result.recorde : {"atual": 0, "anterior": 0})
     });
 });
 
