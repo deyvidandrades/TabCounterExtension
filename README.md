@@ -10,3 +10,7 @@ Esta é uma extensão de código aberto, nenhuma informação é compartilhada o
 [TabCounterExtension](https://github.com/deyvidandrades/TabCounterExtension)
 
 ![Tabie-banner](https://raw.githubusercontent.com/deyvidandrades/TabCounterExtension/main/src/tabie-banner-1280x800.png)
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
