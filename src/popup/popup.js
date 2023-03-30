@@ -29,7 +29,6 @@ function updateUI(numTabs, numTabsAtual, numJanelas, recorde, anterior) {
     document.getElementById('atual').innerHTML = numTabsAtual
 
     document.getElementById('recorde').innerHTML = recorde
-    document.getElementById('anterior').innerHTML = `Anterior: ${anterior}`
 
     salvarDados(recorde, anterior)
 }
