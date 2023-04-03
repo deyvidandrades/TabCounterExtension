@@ -5,6 +5,10 @@ chrome.windows.getCurrent(function (window) {
     });
 });
 
+document.getElementById("btn_zerar").addEventListener("click", function() {
+    zerarRecordes()
+});
+
 function carregarListaTabs(idJanelaAtual, recorde) {
     chrome.tabs.query({}, function (tabs) {
         let lista_janelas = []
@@ -36,4 +40,8 @@ function updateUI(numTabs, numTabsAtual, numJanelas, recorde, anterior) {
 function salvarDados(recorde, anterior) {
     chrome.storage.sync.set({"recorde": {"atual": recorde, "anterior": anterior}}).then(() => {
     });
+}
+
+function zerarRecordes() {
+    chrome.storage.sync.set({"recorde": {"atual": 0, "anterior": 0}}).then(() => {});
 }

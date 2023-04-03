@@ -37,3 +37,18 @@ h1, h3,
 p {
     margin: 0;
 }
+
+.btn {
+    /*    margin-left: 4px;*/
+    /*    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);*/
+    background-color: #eeeeee;
+    color: #0098a3;
+    padding: 4px 8px 4px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+.btn:hover {
+    background-color: #dddddd;
+}
