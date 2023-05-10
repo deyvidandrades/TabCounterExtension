@@ -5,7 +5,7 @@ chrome.windows.getCurrent(function (window) {
     });
 });
 
-document.getElementById("btn_zerar").addEventListener("click", function() {
+document.getElementById("btn_zerar").addEventListener("click", function () {
     zerarRecordes()
 });
 
@@ -43,5 +43,6 @@ function salvarDados(recorde, anterior) {
 }
 
 function zerarRecordes() {
-    chrome.storage.sync.set({"recorde": {"atual": 0, "anterior": 0}}).then(() => {});
+    chrome.storage.sync.set({"recorde": {"atual": 0, "anterior": 0}}).then(() => {
+    });
 }
