@@ -37,15 +37,15 @@ function updateUI(numTabs, numTabsAtual, numJanelas, recorde, anterior, data) {
     if (data !== "" && data !== undefined)
         document.getElementById('data').innerHTML = `Em ${data}`
 
-    salvarDados(recorde, anterior)
+    salvarDados(recorde, anterior, data)
 }
 
-function salvarDados(recorde, anterior) {
-    chrome.storage.sync.set({"recorde": {"atual": recorde, "anterior": anterior}}).then(() => {
+function salvarDados(recorde, anterior, data) {
+    chrome.storage.sync.set({"recorde": {"atual": recorde, "anterior": anterior, "data": data}}).then(() => {
     });
 }
 
 function zerarRecordes() {
-    chrome.storage.sync.set({"recorde": {"atual": 0, "anterior": 0}}).then(() => {
+    chrome.storage.sync.set({"recorde": {"atual": 0, "anterior": 0, "data": ""}}).then(() => {
     });
 }
