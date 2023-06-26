@@ -19,7 +19,7 @@ function getNumTabs() {
             let recorde = result.recorde
             if (recorde) {
                 if (tabs.length > recorde.anterior) {
-                    salvarDados(tabs.length, recorde.atual)
+                    salvarDados(tabs.length, recorde.atual, formatarData())
                 }
             }
         });
@@ -27,7 +27,15 @@ function getNumTabs() {
     });
 }
 
-function salvarDados(recorde, anterior) {
-    chrome.storage.sync.set({"recorde": {"atual": recorde, "anterior": anterior}}).then(() => {
+function salvarDados(recorde, anterior, data) {
+    chrome.storage.sync.set({"recorde": {"atual": recorde, "anterior": anterior, "data": data}}).then(() => {
     });
+}
+
+function formatarData(date = new Date()) {
+    const dia = date.toLocaleString('default', {day: '2-digit'})
+    const mes = date.toLocaleString('default', {month: '2-digit'})
+    const ano = date.toLocaleString('default', {year: 'numeric'})
+
+    return [dia, mes, ano].join('/');
 }
