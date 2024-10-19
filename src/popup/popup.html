@@ -1,35 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./popup.css"/>
-</head>
-<body>
+<!doctype html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./popup.css" />
+    </head>
+    <body>
+        <h1><div id="resumo"></div></h1>
 
-<h1>Rresumo:</h1>
+        <ul>
+            <li>
+                <span class="grande" id="guias">00</span><br />
+                <div id="guias_abertas"></div>
+                <span class="pequeno" id="janelas"></span>
+            </li>
 
-<ul>
-    <li>
-        <span class="grande" id="guias">58</span><br>Guias abertas.<br>
-        <span class="pequeno" id="janelas">Em 3 janelas</span>
-        <!--        <span id="janelas">3</span> janelas-->
-    </li>
+            <li>
+                <span class="grande" id="atual">00</span><br />
+                <div id="guias_janela_atual"></div>
+            </li>
 
-    <li>
-        <span class="grande" id="atual">45</span><br> Guias na janela atual.
-    </li>
+            <li>
+                <div id="recorde_atual"></div>
+                <span class="grande" id="recorde">00</span><br />
 
-    <li>Seu recorde atual:<br>
-        <span class="grande" id="recorde">87</span><br>
+                <span class="pequeno" id="data"></span>
+            </li>
+        </ul>
+        <b>Tabie</b>, <label id="criado_por"></label> <a class="btn" href="https://twitter.com/deyvid_andrades" target="_NULL">@deyvidandrades</a>
+        <a href="" class="btn" id="btn_zerar">Reset</a>
 
-        <span class="pequeno" id="data"></span>
-    </li>
-</ul>
-<b>Tabie</b>, criado por <a class="btn" href="https://twitter.com/deyvid_andrades" target="_NULL">@deyvidandrades</a>
-<a href="" class="btn" id="btn_zerar">Reset</a>
-
-<script src="./popup.js" type="module"></script>
-</body>
+        <script src="./popup.js" type="module"></script>
+    </body>
 </html>

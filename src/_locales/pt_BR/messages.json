@@ -1,0 +1,29 @@
+{
+  "extension_name": {
+    "message": "Tabie"
+  },
+  "extension_description": {
+    "message": "Este é o Tabie, o contador de guias."
+  },
+  "guias_abertas": {
+    "message": "Guias abertas"
+  },
+  "guias_janela_atual": {
+    "message": "Guias na janela atual"
+  },
+  "recorde_atual": {
+    "message": "Seu recorde atual:"
+  },
+  "em": {
+    "message": "Em"
+  },
+  "janelas": {
+    "message": "janelas"
+  },
+  "resumo": {
+    "message": "Resumo"
+  },
+  "criado_por": {
+    "message": "criado por"
+  }
+}

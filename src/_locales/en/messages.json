@@ -1,0 +1,29 @@
+{
+  "extension_name": {
+    "message": "Tabie"
+  },
+  "extension_description": {
+    "message": "This is Tabie, the tab counter."
+  },
+  "guias_abertas": {
+    "message": "Open tabs"
+  },
+  "guias_janela_atual": {
+    "message": "Tabs in the active window"
+  },
+  "recorde_atual": {
+    "message": "Your record:"
+  },
+  "em": {
+    "message": "In"
+  },
+  "janelas": {
+    "message": "windows"
+  },
+  "resumo": {
+    "message": "Overview"
+  },
+  "criado_por": {
+    "message": "by"
+  }
+}
